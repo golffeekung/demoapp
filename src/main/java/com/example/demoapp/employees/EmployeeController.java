@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EmployeeController {
 	
 	@GetMapping("/employees")
-	public EmployeesResponse[] listEmployees() {
-		return new EmployeesResponse[]{new EmployeesResponse()};
+	public EmployeeResponse[] listEmployees() {
+		return new EmployeeResponse[]{new EmployeeResponse()};
 	}
 }

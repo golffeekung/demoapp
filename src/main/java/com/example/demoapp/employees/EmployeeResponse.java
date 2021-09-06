@@ -1,6 +1,6 @@
 package com.example.demoapp.employees;
 
-public class EmployeesResponse {
+public class EmployeeResponse {
 	private int id;
 	private String name;
 	
