@@ -15,7 +15,7 @@ public class EmployeeControllerTest {
 	private TestRestTemplate restTemplate;
 	
 	@Test
-	void listEmployees() {
+	public void listEmployees() {
 		// Act
 		EmployeeResponse[] results = restTemplate.getForObject("/employees", EmployeeResponse[].class);
 		
@@ -26,7 +26,7 @@ public class EmployeeControllerTest {
 	}
 	
 	@Test
-	void getEmployeeById() {
+	public void getEmployeeById() {
 		int id = 1;
 		// Act
 		EmployeeResponse result = restTemplate.getForObject("/employees/"+id, EmployeeResponse.class);
