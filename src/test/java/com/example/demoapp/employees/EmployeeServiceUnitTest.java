@@ -39,16 +39,6 @@ public class EmployeeServiceUnitTest {
 	
 	@Test
 	public void employee_not_found_case() {
-//		int id = 100;
-//		Employee employee = new Employee();
-//		employee.setId(1);
-//		when(employeeRepository.findById(id)).thenReturn(Optional.empty());
-//		EmployeeService employeeService = new EmployeeService(employeeRepository);
-//		// Act
-//		EmployeeResponse result = employeeService.getById(1);
-//		// Assert
-//		assertNotEquals(id, result.getId());
-
 		// Arrange
 		when(employeeRepository.findById(1)).thenReturn(Optional.empty());
 		// Act
