@@ -3,6 +3,7 @@ package com.example.demoapp;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.example.demoapp.employees.Employee;
@@ -21,4 +22,9 @@ public class InitializeData {
 		employee.setName("Pongsakorn");
 		employeeRepository.saveAndFlush(employee);
 	}
+	
+//  @Bean
+//  public RestTemplate createXXX() {
+//      return new RestTemplateBuilder().build();
+//  }
 }
