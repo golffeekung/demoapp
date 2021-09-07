@@ -1,4 +1,4 @@
-package users;
+package com.example.demoapp.users;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
