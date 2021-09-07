@@ -17,6 +17,7 @@ public class EmployeeController {
 //		Cleaning data
 		EmployeeResponse response = employeeService.getById(Integer.parseInt(id));
 		return response;
+		
 	}
 	
 	@GetMapping("/employees")
